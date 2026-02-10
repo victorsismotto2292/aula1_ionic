@@ -1,20 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Aula 1 Ionic | Exercício 1 - Conversão Dólar para Real
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <ion-input label="Digite o valor em dólar" labelPlacement="floating" placeholder="Somente números" [(ngModel)]="dollar"></ion-input>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+      <ion-button expand="block" color="warning" (click)="resultado">Mostrar valor em Real</ion-button>
 </ion-content>
