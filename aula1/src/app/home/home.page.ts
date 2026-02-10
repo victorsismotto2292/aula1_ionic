@@ -15,6 +15,6 @@ export class HomePage {
   resultado = 0;
 
   somar(){
-    this.resultado == parseFloat(this.n1) + parseFloat(this.n2);
+    this.resultado = parseFloat(this.n1) + parseFloat(this.n2);
   }
 }

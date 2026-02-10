@@ -7,9 +7,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-        <ion-input label="Digite o primeiro número" labelPlacement="floating" placeholder="Apenas números"></ion-input>
+        <ion-input label="Digite o primeiro número" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="n1"></ion-input>
 
-        <ion-input label="Digite o segundo número" labelPlacement="floating" placeholder="Apenas números"></ion-input>
+        <ion-input label="Digite o segundo número" labelPlacement="floating" placeholder="Apenas números" [(ngModel)]="n2"></ion-input>
 
-        <ion-button expand="block" color="warning">Calcular Soma</ion-button>
+        <ion-button expand="block" color="warning" (click)="somar()">Calcular Soma</ion-button>
+
+        <ion-label>Resultado: <strong>{{resultado}}</strong></ion-label>
 </ion-content>
