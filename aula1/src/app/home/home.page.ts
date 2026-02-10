@@ -10,4 +10,11 @@ export class HomePage {
 
   constructor() {}
 
+  n1 = '';
+  n2 = '';
+  resultado = 0;
+
+  somar(){
+    this.resultado == parseFloat(this.n1) + parseFloat(this.n2);
+  }
 }
