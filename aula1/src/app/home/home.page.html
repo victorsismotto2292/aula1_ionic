@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Aula 1 - Ionic | Calculadora Simples
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input label="Digite o primeiro número" labelPlacement="floating" placeholder="Apenas Números" [(ngModel)]="n1"></ion-input>
+
+  <ion-input label="Digite o segundo número" labelPlacement="floating" placeholder="Apenas Números" [(ngModel)]="n2"></ion-input>
+
+  <ion-button expand="block" color="warning" (click)="calcular()">Calcular Soma</ion-button>
+
+  <ion-label>Resultado: <strong>{{resultado}}</strong></ion-label>
+</ion-content>
