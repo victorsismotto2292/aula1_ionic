@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class HomePage {
-
+  mensagem: string = '';
   constructor() {}
+
+  exibirMensagem(){
+    this.mensagem = 'Olá mundo! Bem vindo ao Ionic!'
+  }
 
 }
