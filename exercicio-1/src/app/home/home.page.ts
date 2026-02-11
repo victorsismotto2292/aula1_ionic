@@ -10,4 +10,11 @@ export class HomePage {
 
   constructor() {}
 
+  dollar = '';
+  real = 0;
+
+  converter(){
+    this.real = parseFloat(this.dollar)*5.20;
+  }
+
 }
